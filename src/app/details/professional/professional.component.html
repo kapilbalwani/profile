@@ -1,0 +1,8 @@
+<form class="loginForm" (ngSubmit)="onSubmit(f)" #f='ngForm'>
+  <div class="form-group">
+    <label for="exampleInputEmail1">Experience</label>
+    <input type="email" class="form-control" [(ngModel)]="e" name='experience' required #experience='ngModel'>
+  </div>
+  <button type="submit" class="btn btn-primary">Save</button>
+  <button type="reset" class="btn btn-primary">Cancel</button>
+</form>
